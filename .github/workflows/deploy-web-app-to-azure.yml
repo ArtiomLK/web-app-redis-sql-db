@@ -11,6 +11,7 @@ on:
   push:
     paths:
     - 'src/**'
+    - '.github/workflows/**'
     branches:
     - main
   pull_request:
