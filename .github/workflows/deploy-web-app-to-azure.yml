@@ -7,21 +7,17 @@ on:
       name:
         description: 'Name of the user that manually starts the workflow'
         required: true
-        default: 'Paolo Salvatori'
-  push:
-    paths:
-    - 'src/**'
-    branches:
-    - master
+        default: 'ArtiomLK'
   pull_request:
     paths:
+    - '.github/workflows/**'
     - 'src/**'
     branches:
       - main
 env:
-  AZURE_WEBAPP_NAME: RedisCachePrivateLink
+  AZURE_WEBAPP_NAME: webapptsgiwzkinhvqw
   AZURE_WEBAPP_PACKAGE_PATH: ./publish
-  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.RedisCachePrivateLink_f3dd }}
+  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 3.1.x
   WORKING_DIRECTORY: src
