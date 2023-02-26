@@ -8,7 +8,7 @@ on:
         description: 'Name of the user that manually starts the workflow'
         required: true
         default: 'ArtiomLK'
-  pull_request:
+  push:
     paths:
     - '.github/workflows/**'
     - 'src/**'
